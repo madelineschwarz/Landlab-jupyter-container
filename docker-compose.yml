@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  notebook:
+    build:
+      context: .
+      dockerfile: Dockerfile.mini.LL
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./landlab2:/landlab2
